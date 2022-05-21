@@ -33,6 +33,8 @@
     </head>
 
     <body>
+        <x-toast />
+
         @yield('body')
 
         @livewireScripts

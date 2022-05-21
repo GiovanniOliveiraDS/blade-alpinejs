@@ -9,3 +9,8 @@
 input:invalid, textarea:invalid, select:invalid {
     box-shadow: none;
 }
+
+div {
+    transition: all;
+    transition-duration: 500ms;
+}
