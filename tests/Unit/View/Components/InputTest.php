@@ -56,6 +56,12 @@ class FormComponentAttributes extends Component
 class InputTest extends TestCase
 {
     /** @test */
+    public function it_should_render_the_input_id_as_name_md5()
+    {
+        Livewire::test(FormComponent::class)->assertSee(md5('name'));
+    }
+
+    /** @test */
     public function it_should_render_the_input_label()
     {
         Livewire::test(FormComponent::class)->assertSee('My Label');

@@ -8,14 +8,16 @@
     }
 
     $hasError = $name && $errors->has($name);
+
+    $id = $attributes->get('id', md5($name));
 @endphp
 
 <div>
     @if ($label)
-        <x-label :for="$name" :label="$label" :error="$hasError" class="mb-1" />
+        <x-label :for="$id" :label="$label" :error="$hasError" class="mb-1" />
     @endif
 
-    <input {{ $attributes->merge(['type' => 'text'])->class([
+    <input {{ $attributes->merge(['type' => 'text', 'id' => $id])->class([
         'shadow-sm  block w-full sm:text-sm rounded-md',
         'border-gray-300 focus:ring-indigo-500 focus:border-indigo-500' => !$hasError,
         'border-red-300 focus:ring-red-500 focus:border-red-500'        =>  $hasError,
