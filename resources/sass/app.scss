@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .card {
+        @apply rounded-lg p-3 shadow-md bg-white;
+    }
+}
+
 [x-cloak] {
     display: none;
 }

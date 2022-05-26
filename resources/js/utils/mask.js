@@ -15,6 +15,7 @@ const Mask = (el, modifiers, effect) => {
             .replace(/(\d{3})(\d{4})/, '$1-$2');
     };
 
+
     const maskDate = value => {
         el.maxLength = 10;
 
