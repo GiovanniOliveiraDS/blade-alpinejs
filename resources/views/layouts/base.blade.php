@@ -8,12 +8,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        @hasSection('title')
 
-            <title>@yield('title') - {{ config('app.name') }}</title>
-        @else
-            <title>{{ config('app.name') }}</title>
-        @endif
+        <title>{{ $title ?? config('app.name') }}</title>
 
         <!-- Favicon -->
 		<link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
@@ -23,7 +19,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ url(mix('css/app.css')) }}">
-        @livewireStyles
+        <livewire:styles />
 
         <!-- Scripts -->
         <script src="{{ url(mix('js/app.js')) }}" defer></script>
@@ -35,8 +31,8 @@
     <body>
         <x-toast />
 
-        @yield('body')
+        {{ $slot }}
 
-        @livewireScripts
+        <livewire:scripts />
     </body>
 </html>
