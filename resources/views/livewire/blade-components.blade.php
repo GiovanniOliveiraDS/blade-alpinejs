@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
+<div>
     <!-- Without Error -->
     <div class="grid grid-cols-3 gap-5 p-6">
         <div class="card">
@@ -54,4 +52,17 @@
             <x-input name="name3" label="Without Error" hint="We'll only use this for spam." />
         </div>
     </div>
-@endsection
+
+    <div class="card max-w-md mx-auto">
+        <b wire:click="$refresh">Input + Label + WireModel</b>
+
+        <div class="border border-gray-200 mt-2 mb-3"></div>
+
+        Model: {{ $model }}
+
+        <br/>
+        <br/>
+
+        <x-input wire:model="model" label="Without Error" hint="We'll only use this for spam." />
+    </div>
+</div>

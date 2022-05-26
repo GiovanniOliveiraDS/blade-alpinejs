@@ -6,6 +6,8 @@ use Livewire\Component;
 
 class BladeComponents extends Component
 {
+    public ?string $model = null;
+
     public function mount()
     {
         $this->addError('name', 'Name is required.');
