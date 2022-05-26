@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
+<x-app-layout title="Alpine JS">
     <div class="flex flex-col p-10">
         <h1 class="text-2xl font-semibold text-gray-700 dark:text-gray-200">
             Alpine Components
@@ -86,4 +84,4 @@
             </div>
         </section>
     </div>
-@endsection
+</x-app-layout>

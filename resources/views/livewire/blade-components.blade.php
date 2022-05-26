@@ -1,6 +1,6 @@
 <div>
     <!-- Without Error -->
-    <div class="grid grid-cols-3 gap-5 p-6">
+    <div class="grid grid-cols-3 gap-5 p-8">
         <div class="card">
             <b>Input</b>
 

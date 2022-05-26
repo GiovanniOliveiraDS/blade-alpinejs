@@ -14,6 +14,6 @@ class BladeComponents extends Component
         $this->addError('name2', 'Name is required.');
         $this->addError('name3', 'Name is required.');
 
-        return view('livewire.blade-components');
+        return view('livewire.blade-components')->title('Blade Components');
     }
 }

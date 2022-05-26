@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ $title ?? config('app.name') }}</title>
 
@@ -13,14 +14,13 @@
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ url(mix('css/app.css')) }}">
+        <link rel="stylesheet" href="{{ asset(mix('css/app.css')) }}">
         <livewire:styles />
 
         <!-- Scripts -->
-        <script src="{{ url(mix('js/app.js')) }}" defer></script>
+        <script src="{{ asset(mix('js/app.js')) }}" defer></script>
 
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+        @stack('styles')
     </head>
 
     <body
@@ -33,5 +33,6 @@
         {{ $slot }}
 
         <livewire:scripts />
+        @stack('scripts')
     </body>
 </html>

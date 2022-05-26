@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
+<x-app-layout title="Dark Mode">
     <div class="flex flex-col items-center justify-center h-full">
         <h1 class="text-4xl font-semibold dark:text-gray-200">Dark Mode Switch</h1>
         <div
@@ -11,4 +9,4 @@
         >
         </div>
     </div>
-@endsection
+</x-app-layout>
