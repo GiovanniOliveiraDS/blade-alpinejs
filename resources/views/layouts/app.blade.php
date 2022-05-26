@@ -26,7 +26,7 @@
                 </li>
 
                 <li>
-                    <a href="{{ route('dark-mode') }}"
+                    <a href="{{ route('blade-components') }}"
                         class="flex items-center gap-2 {{ request()->is('blade-components') ? 'bg-blue-50 text-blue-900 dark:bg-slate-800 dark:text-slate-200' : 'text-gray-600 dark:text-blue-400' }} cursor-pointer p-5 rounded-xl hover:bg-blue-50 dark:hover:bg-slate-700 transition duration-500">
                         <x-icons.heroicons.outline.code class="w-6 h-6" />
                         Blade Components
@@ -54,7 +54,7 @@
             </div>
         </div>
 
-        <div class="col-start-3 col-end-11 rounded-3xl overflow-y-scroll min-h-full bg-blue-50 dark:bg-slate-800">
+        <div class="col-start-3 col-end-11 rounded-3xl overflow-y-auto min-h-full bg-blue-50 dark:bg-slate-800">
             @yield('content')
 
             @isset($slot)

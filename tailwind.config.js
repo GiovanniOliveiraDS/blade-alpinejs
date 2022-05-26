@@ -15,15 +15,12 @@ module.exports = {
         }
     },
     content: [
-        './app/**/*.php',
-        './resources/**/*.html',
+        './app/Http/Livewire/**/*.php',
+        './app/View/**/*.php',
+        './resources/**/*.blade.php',
         './resources/**/*.js',
-        './resources/**/*.jsx',
-        './resources/**/*.ts',
-        './resources/**/*.tsx',
-        './resources/**/*.php',
-        './resources/**/*.vue',
-        './resources/**/*.twig',
+        './storage/framework/views/*.php',
+        './storage/framework/views/**/*.blade.php',
     ],
     plugins: [
         require('@tailwindcss/forms'),
