@@ -6,7 +6,7 @@
 
             <div class="border border-gray-200 mt-2 mb-3"></div>
 
-            <x-input />
+            <x-input placeholder="DevSquad Workshop" />
         </div>
 
         <div class="card">
@@ -14,7 +14,7 @@
 
             <div class="border border-gray-200 mt-2 mb-3"></div>
 
-            <x-input label="Without Error" />
+            <x-input placeholder="DevSquad Workshop" label="Without Error" />
         </div>
 
         <div class="card">
@@ -22,7 +22,7 @@
 
             <div class="border border-gray-200 mt-2 mb-3"></div>
 
-            <x-input label="Without Error" hint="We'll only use this for spam." />
+            <x-input placeholder="DevSquad Workshop" label="Without Error" hint="We'll only use this for spam." />
         </div>
     </div>
 
@@ -33,7 +33,7 @@
 
             <div class="border border-gray-200 mt-2 mb-3"></div>
 
-            <x-input name="name" />
+            <x-input placeholder="DevSquad Workshop" name="name" />
         </div>
 
         <div class="card">
@@ -41,7 +41,7 @@
 
             <div class="border border-gray-200 mt-2 mb-3"></div>
 
-            <x-input name="name2" label="Without Error" />
+            <x-input placeholder="DevSquad Workshop" name="name2" label="Without Error" />
         </div>
 
         <div class="card">
@@ -49,7 +49,7 @@
 
             <div class="border border-gray-200 mt-2 mb-3"></div>
 
-            <x-input name="name3" label="Without Error" hint="We'll only use this for spam." />
+            <x-input name="name3" label="Without Error" placeholder="DevSquad Workshop" hint="We'll only use this for spam." />
         </div>
     </div>
 
@@ -60,9 +60,9 @@
 
         Model: {{ $model }}
 
-        <br/>
-        <br/>
+        <br />
+        <br />
 
-        <x-input wire:model="model" label="Without Error" hint="We'll only use this for spam." />
+        <x-input wire:model="model" label="Without Error" placeholder="DevSquad Workshop" />
     </div>
 </div>
