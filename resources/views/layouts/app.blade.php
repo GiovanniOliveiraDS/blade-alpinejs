@@ -13,6 +13,7 @@
                             @class([
                                 'cursor-pointer p-5 rounded-xl hover:bg-blue-50 dark:hover:bg-slate-700 transition duration-500',
                                 'bg-blue-50 text-blue-900 dark:bg-slate-800 dark:text-slate-200'=> request()->routeIs($route['name']),
+                                'text-gray-600 dark:text-blue-400'=> !request()->routeIs($route['name']),
                                 'flex items-center gap-2 ',
                             ])>
                             <x-dynamic-component :component="$route['icon']" class="w-6 h-6" />
