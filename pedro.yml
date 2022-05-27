@@ -1,0 +1,19 @@
+- Valores DevSquad
+    - Make it happen
+    - Simplicity
+
+- attributes
+    - bad
+        - :show-label="true"
+        - :show-options="false"
+    - good
+        - without-label
+        - without-options
+        - hide-options
+
+- responsibility: SOLID
+    - Single Responsibility Principle     - Simplicity
+    - Open/Closed Principle
+    - Liskov Substitution Principle
+    - Interface Segregation Principle
+    - Dependency Inversion Principle
