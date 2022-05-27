@@ -9,7 +9,6 @@
 <div>
     <div x-data="datePicker({{-- @entangle($attributes->wire('model')), --}} @js($format), @js($min_date), @js($max_date), @js($time))" x-cloak>
         <div {{ $attributes->merge(['class' => 'relative']) }}>
-            <input type="hidden" name="date" x-ref="date" :value="datepickerValue" />
             <x-input
                 type="text"
                 x-on:click="showDatepicker = true"
@@ -18,14 +17,8 @@
                 class="w-full"
                 :label="$label"
                 placeholder="Select date"
+                x-ref="date"
             />
-
-            <div class="hidden">
-                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-            </div>
 
             <div
                 class="bg-white mt-3 p-5 rounded-xl shadow-md relative"
