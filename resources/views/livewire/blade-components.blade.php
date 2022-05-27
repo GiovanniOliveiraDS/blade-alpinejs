@@ -6,7 +6,7 @@
 
             <div class="border border-gray-200 mt-2 mb-3"></div>
 
-            <x-input placeholder="DevSquad Workshop" />
+            <x-input name="foo1" placeholder="DevSquad Workshop" />
         </div>
 
         <div class="card">
@@ -14,7 +14,7 @@
 
             <div class="border border-gray-200 mt-2 mb-3"></div>
 
-            <x-input placeholder="DevSquad Workshop" label="Without Error" />
+            <x-input name="foo2" placeholder="DevSquad Workshop" label="Without Error" />
         </div>
 
         <div class="card">
@@ -22,7 +22,7 @@
 
             <div class="border border-gray-200 mt-2 mb-3"></div>
 
-            <x-input placeholder="DevSquad Workshop" label="Without Error" hint="We'll only use this for spam." />
+            <x-input name="foo3" placeholder="DevSquad Workshop" label="Without Error" hint="We'll only use this for spam." />
         </div>
     </div>
 
