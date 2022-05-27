@@ -93,5 +93,13 @@
                 <x-date-picker :time="true" wire:model="datePicker" label="Date and Time Picker" />
             </div>
         </section>
+
+        <section class="mb-5">
+            <h2 class="text-lg text-gray-700 dark:text-gray-200 mb-3">Livewire</h2>
+
+            <div class="">
+                <livewire:playground/>
+            </div>
+        </section>
     </div>
 </x-app-layout>

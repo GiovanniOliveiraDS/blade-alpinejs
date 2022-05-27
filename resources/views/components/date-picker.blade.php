@@ -21,7 +21,7 @@
             />
 
             <div
-                class="bg-white mt-3 p-5 rounded-xl shadow-md relative"
+                class="absolute z-20 w-full bg-white mt-3 p-5 rounded-xl shadow-md"
                 x-show="showDatepicker"
                 x-transition:enter="transition ease-out"
                 x-transition:enter-start="opacity-0 -translate-y-6"

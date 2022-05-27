@@ -2,14 +2,17 @@ import Alpine from "alpinejs";
 import Lottie from 'lottie-web';
 import DarkSwitch from './darkSwitch';
 import DatePicker from "./datePicker";
+import Playground from "./playground";
 import Toast from "./toast";
 
 window.DarkSwitch = DarkSwitch;
 window.DatePicker = DatePicker;
+window.Playground = Playground;
 window.Toast = Toast;
 
 Alpine.data('darkSwitch', DarkSwitch);
 Alpine.data('datePicker', DatePicker);
+Alpine.data('playground', Playground);
 Alpine.data('toast', Toast);
 
 Alpine.data('gitHubIcon', () => ({
